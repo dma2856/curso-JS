@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais prova</title>
+</head>
+<body>
+    <h1>Sistema para cadastro de Nacionalidade</h1>
+    Qual é seu país de Origem : <input type="text" name="txtvel" id="txtvel">  
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var País = (txtv.value)
+            res.innerHTML = `<p>O país cadastrado é  o <strong>${País}!<strong></p>`
+            if (País ==/*!= (diferente)*/'Brasil' || País == 'brasil') {//"SE o país for o Br, vc é Brasileiro.
+            res.innerHTML +=/*esse simbolo mantem o comentario acima*/ `<p>Sua solicitação foi <strong>AUTORIZADA, pois você é Brasileiro!</p>`
+            
+            }else 
+            res.innerHTML += `<strong>NEGADO!<strong>`
+            }
+            
+
+                
+             /* esse exercicio usei as condiçôes do ex009condições.js
+             1)Nesse caso só preciso aprender como coloca 'brasil' e serei aceito como faço?
+             resposta pergunta 1: utiliza se || */
+             
+             
+             
+        
+            
+
+
+        
+    </script>
+    
+</body>
+</html>
